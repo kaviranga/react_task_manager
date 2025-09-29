@@ -27,7 +27,7 @@ function App() {
       const res = await axios.post(API_URL, task);
       setTasks([...tasks, res.data.data]);
     } catch (error) {
-      console.error('Failed to add task:', error);
+      console.error('Failed to add tasks:', error);
     }
   };
 
